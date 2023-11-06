@@ -1,4 +1,5 @@
-FROM python:3.9.7-slim-buster
+FROM python:3.10.6-slim-buster
+RUN git clone https://github.com/RepthonArabic/Repthon /root/repthon
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install git curl python3-pip ffmpeg -y
 RUN pip3 install -U pip
@@ -9,4 +10,5 @@ RUN npm i -g npm
 COPY . /app/
 WORKDIR /app/
 RUN pip3 install -U -r requirements.txt
+EXPOSE 8080
 CMD ["bash","start.sh"]
