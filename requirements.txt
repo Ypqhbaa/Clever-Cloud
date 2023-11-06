@@ -1,2 +1,5 @@
 flask
 gunicorn
+aiohttp
+aiofiles
+Telethon==1.25.2
