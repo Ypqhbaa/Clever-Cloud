@@ -1,2 +1,3 @@
 #!/bin/bash
-python3 app.py & $START_CMD & $REPO_URL
+
+python3 app.py & $START_CMD
