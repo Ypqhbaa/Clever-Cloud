@@ -3,7 +3,6 @@ flask_restful
 gunicorn
 aiohttp
 aiofiles
-Telethon==1.25.2
 motor==3.1.1
 psutil==5.9.4
 pyromod==1.5
